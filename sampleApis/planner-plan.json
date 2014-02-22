@@ -1,0 +1,1169 @@
+// GET: http://dev.hsl.fi/opentripplanner-api-webapp/ws/plan?toPlace=60.19295606399697%2C24.895834922790527&fromPlace=60.197437%2C24.924727999999998&minTransferTime=180&walkSpeed=1.17&maxWalkDistance=100000&numItineraries=3&mode=SUBWAY%2CRAIL%2CTRAM%2CBUS%2CFERRY%2CWALK
+// Query:
+// toPlace:         60.19295606399697,24.895834922790527
+// fromPlace:       60.197437,24.924727999999998
+// minTransferTime: 180
+// walkSpeed:       1.17
+// maxWalkDistance: 100000
+// numItineraries:  3
+// mode:            SUBWAY,RAIL,TRAM,BUS,FERRY,WALK
+{
+    "requestParameters": {
+        "maxWalkDistance": "100000",
+        "fromPlace": "60.197437,24.924727999999998",
+        "toPlace": "60.19295606399697,24.895834922790527",
+        "minTransferTime": "180",
+        "walkSpeed": "1.17",
+        "numItineraries": "3",
+        "mode": "SUBWAY,RAIL,TRAM,BUS,FERRY,WALK"
+    },
+    "plan": {
+        "date": 1393053059000,
+        "from": {
+            "name": "Pasilanraitio",
+            "stopId": null,
+            "stopCode": null,
+            "platformCode": null,
+            "lon": 24.925750500000003,
+            "lat": 60.1980584,
+            "arrival": null,
+            "departure": null,
+            "orig": null,
+            "zoneId": null,
+            "stopIndex": null
+        },
+        "to": {
+            "name": "Paciuksenkatu",
+            "stopId": null,
+            "stopCode": null,
+            "platformCode": null,
+            "lon": 24.89583429032066,
+            "lat": 60.19295566355682,
+            "arrival": null,
+            "departure": null,
+            "orig": null,
+            "zoneId": null,
+            "stopIndex": null
+        },
+        "itineraries": [{
+            "duration": 937000,
+            "startTime": 1393053122000,
+            "endTime": 1393054059000,
+            "walkTime": 395,
+            "transitTime": 540,
+            "waitingTime": 2,
+            "walkDistance": 404.6566829673285,
+            "walkLimitExceeded": false,
+            "elevationLost": 0.0,
+            "elevationGained": 0.0,
+            "transfers": 0,
+            "fare": null,
+            "legs": [{
+                "startTime": 1393053122000,
+                "endTime": 1393053419000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 305.54759329075426,
+                "mode": "WALK",
+                "route": "",
+                "agencyName": null,
+                "agencyUrl": null,
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": null,
+                "routeId": null,
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": null,
+                "agencyId": null,
+                "tripId": null,
+                "serviceDate": null,
+                "from": {
+                    "name": "Pasilanraitio",
+                    "stopId": null,
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.925750500000003,
+                    "lat": 60.1980584,
+                    "arrival": null,
+                    "departure": 1393053122000,
+                    "orig": "",
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "to": {
+                    "name": "Palkkatilanportti",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1171153"
+                    },
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.928859124727495,
+                    "lat": 60.196469391822035,
+                    "arrival": 1393053419000,
+                    "departure": 1393053420000,
+                    "orig": null,
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "legGeometry": {
+                    "points": "yllnJ}hcwCBK^eBRaADQFMDGFEHE\\M?EAQDCKsB?UGgAHE?c@ZMPGb@Q|@]l@SHC",
+                    "levels": null,
+                    "length": 24
+                },
+                "notes": [{
+                    "text": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                }, {
+                    "text": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                }],
+                "alerts": [{
+                    "alertHeaderText": {
+                        "translations": {
+                            "en": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                        },
+                        "someTranslation": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                    },
+                    "alertDescriptionText": null,
+                    "alertUrl": null,
+                    "effectiveStartDate": null
+                }, {
+                    "alertHeaderText": {
+                        "translations": {
+                            "en": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                        },
+                        "someTranslation": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                    },
+                    "alertDescriptionText": null,
+                    "alertUrl": null,
+                    "effectiveStartDate": null
+                }],
+                "routeShortName": null,
+                "routeLongName": null,
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": false,
+                "duration": 297000,
+                "intermediateStops": null,
+                "steps": [{
+                    "distance": 104.75036778889923,
+                    "relativeDirection": "DEPART",
+                    "streetName": "Pasilanraitio",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.925750500000003,
+                    "lat": 60.1980584,
+                    "elevation": [],
+                    "alerts": [{
+                        "alertHeaderText": {
+                            "translations": {
+                                "en": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                            },
+                            "someTranslation": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                        },
+                        "alertDescriptionText": null,
+                        "alertUrl": null,
+                        "effectiveStartDate": null
+                    }, {
+                        "alertHeaderText": {
+                            "translations": {
+                                "en": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                            },
+                            "someTranslation": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                        },
+                        "alertDescriptionText": null,
+                        "alertUrl": null,
+                        "effectiveStartDate": null
+                    }]
+                }, {
+                    "distance": 76.81293549348628,
+                    "relativeDirection": "LEFT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "EAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.9269813,
+                    "lat": 60.1974328,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 9.898177590178168,
+                    "relativeDirection": "LEFT",
+                    "streetName": "Esterinportti",
+                    "absoluteDirection": "EAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.9282049,
+                    "lat": 60.19746730000001,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 114.08611241819061,
+                    "relativeDirection": "RIGHT",
+                    "streetName": "Pasilankatu",
+                    "absoluteDirection": "SOUTH",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.928384,
+                    "lat": 60.197467800000005,
+                    "elevation": [],
+                    "alerts": null
+                }]
+            }, {
+                "startTime": 1393053420000,
+                "endTime": 1393053960000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 2470.235887691226,
+                "mode": "BUS",
+                "route": "58",
+                "agencyName": "Helsingin seudun liikenne",
+                "agencyUrl": "http://www.hsl.fi/FI/aikataulutjareitit/Sivut/hsljatransit.aspx",
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": 3,
+                "routeId": "1058",
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": "Munkkivuori",
+                "agencyId": "HSL",
+                "tripId": "1058_20140214_La_1_0855",
+                "serviceDate": "20140222",
+                "from": {
+                    "name": "Palkkatilanportti",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1171153"
+                    },
+                    "stopCode": "2106",
+                    "platformCode": null,
+                    "lon": 24.9287016,
+                    "lat": 60.1963955,
+                    "arrival": 1393053419000,
+                    "departure": 1393053420000,
+                    "orig": null,
+                    "zoneId": "1",
+                    "stopIndex": 20
+                },
+                "to": {
+                    "name": "Meilahdentie",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1150111"
+                    },
+                    "stopCode": "1385",
+                    "platformCode": null,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "arrival": 1393053960000,
+                    "departure": 1393053961000,
+                    "orig": null,
+                    "zoneId": "1",
+                    "stopIndex": 27
+                },
+                "legGeometry": {
+                    "points": "qblnJg|cwCnAe@pBw@\\[H[@u@pDsAZMZINCZBl@VZXhAlA`@`@NHz@AV[b@fEPtAF\\fErY`@lBx@tChAbDrAjD?tA@l@J|H@bABfA@fA@`@BfB?^Dx@KTMVI\\kA~COh@yB~GY|@GP?z@Aj@?z@?`@?f@GhHK|N?FAdC?p@GdMItNAxAAtAAX?t@AfAAp@Cl@Gn@G^CZIZKb@a@|Am@zBc@~Ae@pB[jAOp@I^Kb@Oh@g@nBUv@[fAM^EN",
+                    "levels": null,
+                    "length": 82
+                },
+                "notes": null,
+                "alerts": null,
+                "routeShortName": "58",
+                "routeLongName": "Itäkeskus(M) - Pasila - Munkkivuori",
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": true,
+                "duration": 540000,
+                "intermediateStops": null,
+                "steps": []
+            }, {
+                "startTime": 1393053961000,
+                "endTime": 1393054059000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 98.77575633101432,
+                "mode": "WALK",
+                "route": "",
+                "agencyName": null,
+                "agencyUrl": null,
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": null,
+                "routeId": null,
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": null,
+                "agencyId": null,
+                "tripId": null,
+                "serviceDate": null,
+                "from": {
+                    "name": "Meilahdentie",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1150111"
+                    },
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "arrival": 1393053960000,
+                    "departure": 1393053961000,
+                    "orig": null,
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "to": {
+                    "name": "Paciuksenkatu",
+                    "stopId": null,
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.89583429032066,
+                    "lat": 60.19295566355682,
+                    "arrival": 1393054059000,
+                    "departure": null,
+                    "orig": "",
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "legGeometry": {
+                    "points": "kpknJ_g}vCNg@?KTc@@DFRLa@H]d@_B",
+                    "levels": null,
+                    "length": 9
+                },
+                "notes": null,
+                "alerts": null,
+                "routeShortName": null,
+                "routeLongName": null,
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": false,
+                "duration": 98000,
+                "intermediateStops": null,
+                "steps": [{
+                    "distance": 17.888498996450263,
+                    "relativeDirection": "DEPART",
+                    "streetName": "platform",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 15.35411269885366,
+                    "relativeDirection": "SLIGHTLY_RIGHT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.8949897,
+                    "lat": 60.193421400000005,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 9.50150461283258,
+                    "relativeDirection": "RIGHT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "SOUTHWEST",
+                    "exit": null,
+                    "stayOn": true,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.895167,
+                    "lat": 60.19331510000001,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 56.03164002287782,
+                    "relativeDirection": "LEFT",
+                    "streetName": "Paciuksenkatu",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.895032,
+                    "lat": 60.19326220000001,
+                    "elevation": [],
+                    "alerts": null
+                }]
+            }],
+            "tooSloped": false
+        }, {
+            "duration": 937000,
+            "startTime": 1393054022000,
+            "endTime": 1393054959000,
+            "walkTime": 395,
+            "transitTime": 540,
+            "waitingTime": 2,
+            "walkDistance": 404.6566829673285,
+            "walkLimitExceeded": false,
+            "elevationLost": 0.0,
+            "elevationGained": 0.0,
+            "transfers": 0,
+            "fare": null,
+            "legs": [{
+                "startTime": 1393054022000,
+                "endTime": 1393054319000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 305.54759329075426,
+                "mode": "WALK",
+                "route": "",
+                "agencyName": null,
+                "agencyUrl": null,
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": null,
+                "routeId": null,
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": null,
+                "agencyId": null,
+                "tripId": null,
+                "serviceDate": null,
+                "from": {
+                    "name": "Pasilanraitio",
+                    "stopId": null,
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.925750500000003,
+                    "lat": 60.1980584,
+                    "arrival": null,
+                    "departure": 1393054022000,
+                    "orig": "",
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "to": {
+                    "name": "Palkkatilanportti",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1171153"
+                    },
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.928859124727495,
+                    "lat": 60.196469391822035,
+                    "arrival": 1393054319000,
+                    "departure": 1393054320000,
+                    "orig": null,
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "legGeometry": {
+                    "points": "yllnJ}hcwCBK^eBRaADQFMDGFEHE\\M?EAQDCKsB?UGgAHE?c@ZMPGb@Q|@]l@SHC",
+                    "levels": null,
+                    "length": 24
+                },
+                "notes": [{
+                    "text": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                }, {
+                    "text": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                }],
+                "alerts": [{
+                    "alertHeaderText": {
+                        "translations": {
+                            "en": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                        },
+                        "someTranslation": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                    },
+                    "alertDescriptionText": null,
+                    "alertUrl": null,
+                    "effectiveStartDate": null
+                }, {
+                    "alertHeaderText": {
+                        "translations": {
+                            "en": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                        },
+                        "someTranslation": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                    },
+                    "alertDescriptionText": null,
+                    "alertUrl": null,
+                    "effectiveStartDate": null
+                }],
+                "routeShortName": null,
+                "routeLongName": null,
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": false,
+                "duration": 297000,
+                "intermediateStops": null,
+                "steps": [{
+                    "distance": 104.75036778889923,
+                    "relativeDirection": "DEPART",
+                    "streetName": "Pasilanraitio",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.925750500000003,
+                    "lat": 60.1980584,
+                    "elevation": [],
+                    "alerts": [{
+                        "alertHeaderText": {
+                            "translations": {
+                                "en": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                            },
+                            "someTranslation": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                        },
+                        "alertDescriptionText": null,
+                        "alertUrl": null,
+                        "effectiveStartDate": null
+                    }, {
+                        "alertHeaderText": {
+                            "translations": {
+                                "en": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                            },
+                            "someTranslation": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                        },
+                        "alertDescriptionText": null,
+                        "alertUrl": null,
+                        "effectiveStartDate": null
+                    }]
+                }, {
+                    "distance": 76.81293549348628,
+                    "relativeDirection": "LEFT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "EAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.9269813,
+                    "lat": 60.1974328,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 9.898177590178168,
+                    "relativeDirection": "LEFT",
+                    "streetName": "Esterinportti",
+                    "absoluteDirection": "EAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.9282049,
+                    "lat": 60.19746730000001,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 114.08611241819061,
+                    "relativeDirection": "RIGHT",
+                    "streetName": "Pasilankatu",
+                    "absoluteDirection": "SOUTH",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.928384,
+                    "lat": 60.197467800000005,
+                    "elevation": [],
+                    "alerts": null
+                }]
+            }, {
+                "startTime": 1393054320000,
+                "endTime": 1393054860000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 2470.235887691226,
+                "mode": "BUS",
+                "route": "58",
+                "agencyName": "Helsingin seudun liikenne",
+                "agencyUrl": "http://www.hsl.fi/FI/aikataulutjareitit/Sivut/hsljatransit.aspx",
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": 3,
+                "routeId": "1058",
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": "Munkkivuori",
+                "agencyId": "HSL",
+                "tripId": "1058_20140214_La_1_0910",
+                "serviceDate": "20140222",
+                "from": {
+                    "name": "Palkkatilanportti",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1171153"
+                    },
+                    "stopCode": "2106",
+                    "platformCode": null,
+                    "lon": 24.9287016,
+                    "lat": 60.1963955,
+                    "arrival": 1393054319000,
+                    "departure": 1393054320000,
+                    "orig": null,
+                    "zoneId": "1",
+                    "stopIndex": 20
+                },
+                "to": {
+                    "name": "Meilahdentie",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1150111"
+                    },
+                    "stopCode": "1385",
+                    "platformCode": null,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "arrival": 1393054860000,
+                    "departure": 1393054861000,
+                    "orig": null,
+                    "zoneId": "1",
+                    "stopIndex": 27
+                },
+                "legGeometry": {
+                    "points": "qblnJg|cwCnAe@pBw@\\[H[@u@pDsAZMZINCZBl@VZXhAlA`@`@NHz@AV[b@fEPtAF\\fErY`@lBx@tChAbDrAjD?tA@l@J|H@bABfA@fA@`@BfB?^Dx@KTMVI\\kA~COh@yB~GY|@GP?z@Aj@?z@?`@?f@GhHK|N?FAdC?p@GdMItNAxAAtAAX?t@AfAAp@Cl@Gn@G^CZIZKb@a@|Am@zBc@~Ae@pB[jAOp@I^Kb@Oh@g@nBUv@[fAM^EN",
+                    "levels": null,
+                    "length": 82
+                },
+                "notes": null,
+                "alerts": null,
+                "routeShortName": "58",
+                "routeLongName": "Itäkeskus(M) - Pasila - Munkkivuori",
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": true,
+                "duration": 540000,
+                "intermediateStops": null,
+                "steps": []
+            }, {
+                "startTime": 1393054861000,
+                "endTime": 1393054959000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 98.77575633101432,
+                "mode": "WALK",
+                "route": "",
+                "agencyName": null,
+                "agencyUrl": null,
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": null,
+                "routeId": null,
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": null,
+                "agencyId": null,
+                "tripId": null,
+                "serviceDate": null,
+                "from": {
+                    "name": "Meilahdentie",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1150111"
+                    },
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "arrival": 1393054860000,
+                    "departure": 1393054861000,
+                    "orig": null,
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "to": {
+                    "name": "Paciuksenkatu",
+                    "stopId": null,
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.89583429032066,
+                    "lat": 60.19295566355682,
+                    "arrival": 1393054959000,
+                    "departure": null,
+                    "orig": "",
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "legGeometry": {
+                    "points": "kpknJ_g}vCNg@?KTc@@DFRLa@H]d@_B",
+                    "levels": null,
+                    "length": 9
+                },
+                "notes": null,
+                "alerts": null,
+                "routeShortName": null,
+                "routeLongName": null,
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": false,
+                "duration": 98000,
+                "intermediateStops": null,
+                "steps": [{
+                    "distance": 17.888498996450263,
+                    "relativeDirection": "DEPART",
+                    "streetName": "platform",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 15.35411269885366,
+                    "relativeDirection": "SLIGHTLY_RIGHT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.8949897,
+                    "lat": 60.193421400000005,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 9.50150461283258,
+                    "relativeDirection": "RIGHT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "SOUTHWEST",
+                    "exit": null,
+                    "stayOn": true,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.895167,
+                    "lat": 60.19331510000001,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 56.03164002287782,
+                    "relativeDirection": "LEFT",
+                    "streetName": "Paciuksenkatu",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.895032,
+                    "lat": 60.19326220000001,
+                    "elevation": [],
+                    "alerts": null
+                }]
+            }],
+            "tooSloped": false
+        }, {
+            "duration": 937000,
+            "startTime": 1393054922000,
+            "endTime": 1393055859000,
+            "walkTime": 395,
+            "transitTime": 540,
+            "waitingTime": 2,
+            "walkDistance": 404.6566829673285,
+            "walkLimitExceeded": false,
+            "elevationLost": 0.0,
+            "elevationGained": 0.0,
+            "transfers": 0,
+            "fare": null,
+            "legs": [{
+                "startTime": 1393054922000,
+                "endTime": 1393055219000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 305.54759329075426,
+                "mode": "WALK",
+                "route": "",
+                "agencyName": null,
+                "agencyUrl": null,
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": null,
+                "routeId": null,
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": null,
+                "agencyId": null,
+                "tripId": null,
+                "serviceDate": null,
+                "from": {
+                    "name": "Pasilanraitio",
+                    "stopId": null,
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.925750500000003,
+                    "lat": 60.1980584,
+                    "arrival": null,
+                    "departure": 1393054922000,
+                    "orig": "",
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "to": {
+                    "name": "Palkkatilanportti",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1171153"
+                    },
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.928859124727495,
+                    "lat": 60.196469391822035,
+                    "arrival": 1393055219000,
+                    "departure": 1393055220000,
+                    "orig": null,
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "legGeometry": {
+                    "points": "yllnJ}hcwCBK^eBRaADQFMDGFEHE\\M?EAQDCKsB?UGgAHE?c@ZMPGb@Q|@]l@SHC",
+                    "levels": null,
+                    "length": 24
+                },
+                "notes": [{
+                    "text": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                }, {
+                    "text": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                }],
+                "alerts": [{
+                    "alertHeaderText": {
+                        "translations": {
+                            "en": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                        },
+                        "someTranslation": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                    },
+                    "alertDescriptionText": null,
+                    "alertUrl": null,
+                    "effectiveStartDate": null
+                }, {
+                    "alertHeaderText": {
+                        "translations": {
+                            "en": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                        },
+                        "someTranslation": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                    },
+                    "alertDescriptionText": null,
+                    "alertUrl": null,
+                    "effectiveStartDate": null
+                }],
+                "routeShortName": null,
+                "routeLongName": null,
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": false,
+                "duration": 297000,
+                "intermediateStops": null,
+                "steps": [{
+                    "distance": 104.75036778889923,
+                    "relativeDirection": "DEPART",
+                    "streetName": "Pasilanraitio",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.925750500000003,
+                    "lat": 60.1980584,
+                    "elevation": [],
+                    "alerts": [{
+                        "alertHeaderText": {
+                            "translations": {
+                                "en": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                            },
+                            "someTranslation": "Ihan pohjoispäässä ei sallita busseja, vain huoltoajo ja taksit."
+                        },
+                        "alertDescriptionText": null,
+                        "alertUrl": null,
+                        "effectiveStartDate": null
+                    }, {
+                        "alertHeaderText": {
+                            "translations": {
+                                "en": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                            },
+                            "someTranslation": "Ihan pohjoispäästä pääsee taksilla eteläänpäin, etelästä vain huoltoajo."
+                        },
+                        "alertDescriptionText": null,
+                        "alertUrl": null,
+                        "effectiveStartDate": null
+                    }]
+                }, {
+                    "distance": 76.81293549348628,
+                    "relativeDirection": "LEFT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "EAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.9269813,
+                    "lat": 60.1974328,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 9.898177590178168,
+                    "relativeDirection": "LEFT",
+                    "streetName": "Esterinportti",
+                    "absoluteDirection": "EAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.9282049,
+                    "lat": 60.19746730000001,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 114.08611241819061,
+                    "relativeDirection": "RIGHT",
+                    "streetName": "Pasilankatu",
+                    "absoluteDirection": "SOUTH",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.928384,
+                    "lat": 60.197467800000005,
+                    "elevation": [],
+                    "alerts": null
+                }]
+            }, {
+                "startTime": 1393055220000,
+                "endTime": 1393055760000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 2470.235887691226,
+                "mode": "BUS",
+                "route": "58",
+                "agencyName": "Helsingin seudun liikenne",
+                "agencyUrl": "http://www.hsl.fi/FI/aikataulutjareitit/Sivut/hsljatransit.aspx",
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": 3,
+                "routeId": "1058",
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": "Munkkivuori",
+                "agencyId": "HSL",
+                "tripId": "1058_20140214_La_1_0925",
+                "serviceDate": "20140222",
+                "from": {
+                    "name": "Palkkatilanportti",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1171153"
+                    },
+                    "stopCode": "2106",
+                    "platformCode": null,
+                    "lon": 24.9287016,
+                    "lat": 60.1963955,
+                    "arrival": 1393055219000,
+                    "departure": 1393055220000,
+                    "orig": null,
+                    "zoneId": "1",
+                    "stopIndex": 20
+                },
+                "to": {
+                    "name": "Meilahdentie",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1150111"
+                    },
+                    "stopCode": "1385",
+                    "platformCode": null,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "arrival": 1393055760000,
+                    "departure": 1393055761000,
+                    "orig": null,
+                    "zoneId": "1",
+                    "stopIndex": 27
+                },
+                "legGeometry": {
+                    "points": "qblnJg|cwCnAe@pBw@\\[H[@u@pDsAZMZINCZBl@VZXhAlA`@`@NHz@AV[b@fEPtAF\\fErY`@lBx@tChAbDrAjD?tA@l@J|H@bABfA@fA@`@BfB?^Dx@KTMVI\\kA~COh@yB~GY|@GP?z@Aj@?z@?`@?f@GhHK|N?FAdC?p@GdMItNAxAAtAAX?t@AfAAp@Cl@Gn@G^CZIZKb@a@|Am@zBc@~Ae@pB[jAOp@I^Kb@Oh@g@nBUv@[fAM^EN",
+                    "levels": null,
+                    "length": 82
+                },
+                "notes": null,
+                "alerts": null,
+                "routeShortName": "58",
+                "routeLongName": "Itäkeskus(M) - Pasila - Munkkivuori",
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": true,
+                "duration": 540000,
+                "intermediateStops": null,
+                "steps": []
+            }, {
+                "startTime": 1393055761000,
+                "endTime": 1393055859000,
+                "departureDelay": 0,
+                "arrivalDelay": 0,
+                "realTime": false,
+                "distance": 98.77575633101432,
+                "mode": "WALK",
+                "route": "",
+                "agencyName": null,
+                "agencyUrl": null,
+                "agencyTimeZoneOffset": 7200000,
+                "routeColor": null,
+                "routeType": null,
+                "routeId": null,
+                "routeTextColor": null,
+                "interlineWithPreviousLeg": false,
+                "tripShortName": null,
+                "tripBlockId": null,
+                "headsign": null,
+                "agencyId": null,
+                "tripId": null,
+                "serviceDate": null,
+                "from": {
+                    "name": "Meilahdentie",
+                    "stopId": {
+                        "agencyId": "HSL",
+                        "id": "1150111"
+                    },
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "arrival": 1393055760000,
+                    "departure": 1393055761000,
+                    "orig": null,
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "to": {
+                    "name": "Paciuksenkatu",
+                    "stopId": null,
+                    "stopCode": null,
+                    "platformCode": null,
+                    "lon": 24.89583429032066,
+                    "lat": 60.19295566355682,
+                    "arrival": 1393055859000,
+                    "departure": null,
+                    "orig": "",
+                    "zoneId": null,
+                    "stopIndex": null
+                },
+                "legGeometry": {
+                    "points": "kpknJ_g}vCNg@?KTc@@DFRLa@H]d@_B",
+                    "levels": null,
+                    "length": 9
+                },
+                "notes": null,
+                "alerts": null,
+                "routeShortName": null,
+                "routeLongName": null,
+                "boardRule": null,
+                "alightRule": null,
+                "rentedBike": false,
+                "transitLeg": false,
+                "duration": 98000,
+                "intermediateStops": null,
+                "steps": [{
+                    "distance": 17.888498996450263,
+                    "relativeDirection": "DEPART",
+                    "streetName": "platform",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.8947262,
+                    "lat": 60.1935031,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 15.35411269885366,
+                    "relativeDirection": "SLIGHTLY_RIGHT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.8949897,
+                    "lat": 60.193421400000005,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 9.50150461283258,
+                    "relativeDirection": "RIGHT",
+                    "streetName": "bike path",
+                    "absoluteDirection": "SOUTHWEST",
+                    "exit": null,
+                    "stayOn": true,
+                    "area": false,
+                    "bogusName": true,
+                    "lon": 24.895167,
+                    "lat": 60.19331510000001,
+                    "elevation": [],
+                    "alerts": null
+                }, {
+                    "distance": 56.03164002287782,
+                    "relativeDirection": "LEFT",
+                    "streetName": "Paciuksenkatu",
+                    "absoluteDirection": "SOUTHEAST",
+                    "exit": null,
+                    "stayOn": false,
+                    "area": false,
+                    "bogusName": false,
+                    "lon": 24.895032,
+                    "lat": 60.19326220000001,
+                    "elevation": [],
+                    "alerts": null
+                }]
+            }],
+            "tooSloped": false
+        }]
+    },
+    "error": null,
+    "debug": {
+        "precalculationTime": 0,
+        "pathCalculationTime": 21,
+        "pathTimes": [9, 4, 7],
+        "renderingTime": 1,
+        "totalTime": 22,
+        "timedOut": false
+    }
+}

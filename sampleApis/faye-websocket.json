@@ -1,0 +1,20 @@
+// Single websocket frame at GET: ws://dev.hsl.fi:9002/faye
+[{
+    "channel": "/location/helsinki/1058/3608",
+    "data": {
+        "vehicle": {
+            "id": "3608"
+        },
+        "trip": {
+            "route": "1058",
+            "operator": "HSL"
+        },
+        "position": {
+            "latitude": 60.20893,
+            "longitude": 25.06901
+        },
+        "timestamp": 1393053987.861
+    },
+    "clientId": "7avjdc1xj55g80k9nak31vdfgdf07enr2z0",
+    "id": "h933b"
+}]

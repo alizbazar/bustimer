@@ -1,0 +1,34 @@
+// GET: http://dev.hsl.fi:9002/faye?message=%5B%7B%22channel%22%3A%22%2Fmeta%2Fsubscribe%22%2C%22clientId%22%3A%22gujcic0kr5a0j1yigfre0eed4xo17nue490%22%2C%22subscription%22%3A%22%2Flocation%2Fhelsinki%2F1058%2F**%22%2C%22id%22%3A%222%22%7D%2C%7B%22channel%22%3A%22%2Fmeta%2Fconnect%22%2C%22clientId%22%3A%22gujcic0kr5a0j1yigfre0eed4xo17nue490%22%2C%22connectionType%22%3A%22callback-polling%22%2C%22id%22%3A%223%22%2C%22advice%22%3A%7B%22timeout%22%3A0%7D%7D%5D&jsonp=__jsonp2__
+// Query:
+// message: [{
+//     "channel": "/meta/subscribe",
+//     "clientId": "gujcic0kr5a0j1yigfre0eed4xo17nue490",
+//     "subscription": "/location/helsinki/1058/**",
+//     "id": "2"
+// }, {
+//     "channel": "/meta/connect",
+//     "clientId": "gujcic0kr5a0j1yigfre0eed4xo17nue490",
+//     "connectionType": "callback-polling",
+//     "id": "3",
+//     "advice": {
+//         "timeout": 0
+//     }
+// }]
+// jsonp:__jsonp2__
+__jsonp2__([{
+    "id": "2",
+    "clientId": "gujcic0kr5a0j1yigfre0eed4xo17nue490",
+    "channel": "/meta/subscribe",
+    "successful": true,
+    "subscription": "/location/helsinki/1058/**"
+}, {
+    "id": "3",
+    "clientId": "gujcic0kr5a0j1yigfre0eed4xo17nue490",
+    "channel": "/meta/connect",
+    "successful": true,
+    "advice": {
+        "reconnect": "retry",
+        "interval": 0,
+        "timeout": 45000
+    }
+}]);

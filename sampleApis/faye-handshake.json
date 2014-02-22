@@ -1,0 +1,20 @@
+// GET: http://dev.hsl.fi:9002/faye?message=%5B%7B%22channel%22%3A%22%2Fmeta%2Fhandshake%22%2C%22version%22%3A%221.0%22%2C%22supportedConnectionTypes%22%3A%5B%22callback-polling%22%5D%2C%22id%22%3A%221%22%7D%5D&jsonp=__jsonp1__
+// Query:
+// message: [{"channel":"/meta/handshake","version":"1.0","supportedConnectionTypes":["callback-polling"],"id":"1"}]
+// jsonp:   __jsonp1__
+// ---->>> after this GET: ws://dev.hsl.fi:9002/faye  with Sec-WebSocket headers
+// This one uses FAYE: http://faye.jcoglan.com/
+// Server source code: https://github.com/HSLdevcom/navigator-server/blob/master/src/server.coffee
+__jsonp1__([{
+    "id": "1",
+    "channel": "/meta/handshake",
+    "successful": true,
+    "version": "1.0",
+    "supportedConnectionTypes": ["long-polling", "cross-origin-long-polling", "callback-polling", "websocket", "eventsource", "in-process"],
+    "clientId": "gujcic0kr5a0j1yigfre0eed4xo17nue490",
+    "advice": {
+        "reconnect": "retry",
+        "interval": 0,
+        "timeout": 45000
+    }
+}]);
